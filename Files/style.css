@@ -1,0 +1,162 @@
+html,body {
+  font-family:Helvetica,Arial,Sans-Serif;
+  height:100%;
+  margin:0;
+  overflow:hidden;
+  padding:0;
+  width:100%;
+
+}
+
+h1 {
+  color: #f11d1d;
+  background-color: rgba(0,0,0,0.6);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: -100px;
+
+}
+
+#mainContainer {
+  height:100%;
+  overflow:hidden;
+  width:100%;
+  align-content: center;
+  object-position: center;
+  background-position: center;
+}
+
+#bg{
+    -moz-animation:bg 60s linear infinite;
+    -webkit-animation:bg 60s linear infinite;
+    -ms-animation:bg 60s linear infinite;
+    animation:bg 60s linear infinite;
+    -moz-backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    backface-visibility:hidden;
+    -moz-transform:translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0);
+    -ms-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+    background:#1a1b1c url(images/bg.jpg) bottom left;
+    background-repeat:repeat-x;
+    height:100%;
+    left:0;
+    opacity:1;
+    position:fixed;
+    top:0
+}
+@-moz-keyframes bg{
+    0%{
+        -moz-transform:translate3d(0,0,0);
+        -webkit-transform:translate3d(0,0,0);
+        -ms-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0)
+    }
+    100%{
+        -moz-transform:translate3d(-2250px,0,0);
+        -webkit-transform:translate3d(-2250px,0,0);
+        -ms-transform:translate3d(-2250px,0,0);
+        transform:translate3d(-2250px,0,0)
+    }
+}
+@-webkit-keyframes bg{
+    0%{
+        -moz-transform:translate3d(0,0,0);
+        -webkit-transform:translate3d(0,0,0);
+        -ms-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0)
+    }
+    100%{
+        -moz-transform:translate3d(-2250px,0,0);
+        -webkit-transform:translate3d(-2250px,0,0);
+        -ms-transform:translate3d(-2250px,0,0);
+        transform:translate3d(-2250px,0,0)
+    }
+}
+@-ms-keyframes bg{
+    0%{
+        -moz-transform:translate3d(0,0,0);
+        -webkit-transform:translate3d(0,0,0);
+        -ms-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0)
+    }
+    100%{
+        -moz-transform:translate3d(-2250px,0,0);
+        -webkit-transform:translate3d(-2250px,0,0);
+        -ms-transform:translate3d(-2250px,0,0);
+        transform:translate3d(-2250px,0,0)
+    }
+}
+@keyframes bg{
+    0%{
+        -moz-transform:translate3d(0,0,0);
+        -webkit-transform:translate3d(0,0,0);
+        -ms-transform:translate3d(0,0,0);
+        transform:translate3d(0,0,0)
+    }
+    100%{
+        -moz-transform:translate3d(-2250px,0,0);
+        -webkit-transform:translate3d(-2250px,0,0);
+        -ms-transform:translate3d(-2250px,0,0);
+        transform:translate3d(-2250px,0,0)
+    }
+}
+#bg{
+    background-size:2250px auto;
+    width:6750px
+}
+
+#portal {
+  bottom:0;
+  height:550px;
+  left:0;
+  margin:auto;
+  position:absolute;
+  right:0;
+  text-align:center;
+  top:0;
+  width:1000px;
+
+}
+
+#buttons {
+  bottom:75px;
+  height:200px;
+  position:absolute;
+  width:1000px;
+}
+
+.button {
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:190px;
+  cursor:pointer;
+  display:inline-block;
+  height:200px;
+  transition:background-size .2s ease;
+  width:200px;
+}
+
+.button:hover {background-size:200px}
+.button:active {background-size:180px}
+
+#button1 {background-image:url("images/forums.png")}
+
+#button2 {background-image:url("images/vote.png")}
+
+#button3 {background-image:url("images/store.png")}
+
+#button4 {background-image:url("images/staff.png")}
+
+#button5 {background-image:url("images/bans.png")}
+
+
+@-webkit-keyframes raysAnim{
+  0%   {-webkit-transform:rotateZ(0deg)}
+}
+
+@keyframes cloudsAnim{
+  0%   {transform:translateX(-1366px)}
+}
